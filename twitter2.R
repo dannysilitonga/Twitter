@@ -29,9 +29,7 @@ dm = data.frame(word=names(word_freqs), freq=word_freqs)
 wordcloud(dm$word, dm$freq, random.order=FALSE, colors=brewer.pal(8, "Dark2"))
 
 # save the image in png format
-png("gay3.png", width=12, height=8, units="in", res=720)
+
+png("gayMarriage.png", width=12, height=8, units="in", res=720)
 wordcloud(dm$word, dm$freq, random.order=FALSE, colors=brewer.pal(8, "Dark2"))
 dev.off()
-
-#save
-backup1 <- mach_tweets
